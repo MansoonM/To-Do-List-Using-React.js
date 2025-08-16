@@ -1,0 +1,121 @@
+/* Center the app */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card layout */
+.todo-card {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 400px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Input + Buttons */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Equal buttons */
+.btn {
+  flex: 0 0 90px; /* Fixed equal width */
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 14px;
+  text-align: center;
+}
+
+.add-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.add-btn:hover {
+  background: #45a049;
+}
+
+.clear-btn {
+  background: #f44336;
+  color: white;
+}
+
+.clear-btn:hover {
+  background: #d32f2f;
+}
+
+/* Remaining tasks */
+.remaining {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.todo-item:hover {
+  background: #eee;
+}
+
+.todo-text {
+  cursor: pointer;
+  flex: 1;
+  text-align: left;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #ff5722;
+  color: white;
+  flex: 0 0 60px; /* smaller but consistent */
+}
+
+.delete-btn:hover {
+  background: #e64a19;
+}
